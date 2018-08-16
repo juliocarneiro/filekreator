@@ -1,21 +1,23 @@
 {
-  "name": "interative-cli",
+  "name": "filekreator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
+    "commander": "^2.17.1",
     "figlet": "^1.2.0",
     "inquirer": "^6.1.0",
     "shelljs": "^0.8.2"
   },
+  "preferGlobal": true,
   "bin": {
-    "filecreator": "./index.js"
+    "filekreator": "index.js"
   }
 }

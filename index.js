@@ -1,4 +1,11 @@
 #!/usr/bin/env node
+'use strict';
+
+var program = require( 'commander' );
+var pkg = require( './package.json' );
+
+program.version( pkg.version );
+program.parse( process.argv );
 
 const inquirer = require("inquirer");
 const chalk = require("chalk");
@@ -8,7 +15,7 @@ const shell = require("shelljs");
 const init = () => {
   console.log(
     chalk.green(
-      figlet.textSync("FILECREATOR", {
+      figlet.textSync("FILEKREATOR", {
         font: "epic",
         horizontalLayout: "default",
         verticalLayout: "default"
